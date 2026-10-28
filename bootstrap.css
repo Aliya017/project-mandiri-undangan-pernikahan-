@@ -1,0 +1,76 @@
+:root {
+    --wedding-green: #46594b;
+    --wedding-dark: #2e4035;
+    --wedding-gold: #b9945a;
+    --wedding-cream: #faf7f0;
+}
+.wedding-navbar {
+    min-height: 65px;
+    padding: 8px 0;
+    background: rgba(250, 247, 240, 0.94);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+.wedding-navbar .navbar-brand {
+    color: var(--wedding-green);
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 600;
+}
+.wedding-navbar .nav-link {
+    color: var(--wedding-dark);
+    font-size: 0.85rem;
+    padding: 10px 12px;
+    border: none;
+    background: transparent;
+    transition: color 0.25s ease;
+}
+.wedding-navbar .nav-link:hover,
+.wedding-navbar .nav-link.active {
+    color: var(--wedding-gold);
+}
+.btn {
+    border-radius: 3px;
+    padding: 11px 22px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+.btn-wedding {
+    color: #fff;
+    background: var(--wedding-green);
+    border: 1px solid var(--wedding-green);
+}
+.btn-wedding:hover,
+.btn-wedding:focus {
+    color: #fff;
+    background: var(--wedding-dark);
+    border-color: var(--wedding-dark);
+    transform: translateY(-2px);
+
+}
+.btn-outline-wedding {
+    color: var(--wedding-dark);
+    background: transparent;
+    border: 1px solid var(--wedding-dark);
+    border-radius: 3px;
+    padding: 11px 22px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+.btn-outline-wedding:hover,
+.btn-outline-wedding:focus {
+    color: #fff;
+    background: var(--wedding-dark);
+    border-color: var(--wedding-dark);
+    transform: translateY(-2px);
+}
+.form-control,
+.form-select {
+    padding: 10px 12px;
+    border: 1px solid #dcd8cd;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of AL & BENK </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top wedding-navbar">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand" href="#" id="brandHome">Al & Benk </a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false"
+                    aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><button class="nav-link slide-link active" data-slide="0">Home</button></li>
+                    <li class="nav-item"><button class="nav-link slide-link" data-slide="1">Mempelai</button></li>
+                    <li class="nav-item"><button class="nav-link slide-link" data-slide="2">Acara</button></li>
+                    <li class="nav-item"><button class="nav-link slide-link" data-slide="3">Galeri</button></li>
+                    <li class="nav-item"><button class="nav-link slide-link" data-slide="4">RSVP</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="slideContainer">
+        <section class="wedding-slide active cover-slide">
+            <div class="cover-overlay"></div>
+            <div class="slide-content cover-content">
+                <p class="eyebrow">THE WEDDING OF</p>
+                <h1 class="cover-title">AL <span>&</span> BENK</h1>
+                <p class="cover-quote">
+                    "Bersama dalam cinta, menuju masa depan yang lebih indah."
+                </p>
+                <p class="cover-date">12 JUNI 2027 · SURABAYA</p>
+                <div class="cover-invitation">
+                    <p>Kepada Yth.</p>
+                    <h3 id="guestName">Tamu Undangan</h3>
+                    <p>Dengan penuh kebahagiaan, kami mengundang Anda.</p>
+                    <button class="btn btn-wedding" id="openInvitation">
+                        Buka Undangan <span>↗</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="wedding-slide paper-slide">
+            <div class="slide-content">
+                <p class="eyebrow">THE BRIDE & GROOM</p>
+                <h2 class="slide-title">Dua Hati, Satu Tujuan</h2>
+                <p class="slide-description">
+                    Dengan penuh rasa syukur, kami mengundang Anda
+                    untuk menjadi bagian dari hari bahagia kami.
+                </p>
+                <div class="row justify-content-center align-items-center g-4 couple-row">
+                    <div class="col-6 col-md-4">
+                        <div class="couple-card">
+                            <img
+                                src="mempelaiwanita.jpg"
+                                alt="Foto mempelai wanita">
+                            <h3>Al</h3>
+                            <p class="role">Mempelai Wanita</p>
+                            <p>Putri dari Bapak Dul dan Ibu Peri</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="couple-card">
+                            <img
+                                src="mempelaipria.jpg"
+                                alt="Foto mempelai pria">
+                            <h3>Benk</h3>
+                            <p class="role">Mempelai Pria</p>
+                            <p>Putra dari Bapak El dan Ibu Rina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wedding-slide event-slide">
+            <div class="slide-content">
+                <p class="eyebrow">SAVE THE DATE</p>
+                <h2 class="slide-title">Hari Istimewa Kami</h2>
+                <p class="slide-description">
+                    Sabtu, 12 Juni 2027
+                </p>
+                <div id="countdown" class="countdown">
+                    <div><strong id="days">000</strong><span>Hari</span></div>
+                    <div><strong id="hours">00</strong><span>Jam</span></div>
+                    <div><strong id="minutes">00</strong><span>Menit</span></div>
+                    <div><strong id="seconds">00</strong><span>Detik</span></div>
+                </div>
+                <div class="row justify-content-center g-3 event-row">
+                    <div class="col-6 col-md-4">
+                        <div class="event-card">
+                            <span class="event-icon">♡</span>
+                            <h3>Akad Nikah</h3>
+                            <p>08.00–10.00 WIB</p>
+                            <p>Gedung Graha Sativa</p>
+                            <p>Surabaya</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="event-card">
+                            <span class="event-icon">❀</span>
+                            <h3>Resepsi</h3>
+                            <p>11.00–14.00 WIB</p>
+                            <p>Gedung Graha Sativa</p>
+                            <p>Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn-outline-wedding mt-3"
+                   href="https://maps.app.goo.gl/Y44xCEYr1YiE2uRv9"
+                   target="_blank" rel="noopener noreferrer">
+                    Lihat Lokasi
+                </a>
+            </div>
+        </section>
+        <section class="wedding-slide paper-slide">
+            <div class="slide-content">
+                <p class="eyebrow">OUR MOMENTS</p>
+                <h2 class="slide-title">Galeri Kenangan</h2>
+                <p class="slide-description">
+                    Beberapa momen indah yang menjadi bagian dari cerita kami.
+                </p>
+                <div class="gallery-grid">
+                    <img src="kenangan1.jpg"
+                         alt="kenangan1">
+                    <img src="kenangan2.jpg"
+                         alt="kenangan2">
+                    <img src="kenangan3.jpg"
+                         alt="kenangan3">
+                    <img src="kenangan4.jpg"
+                         alt="kenangan4">
+                </div>
+            </div>
+        </section>
+        <section class="wedding-slide rsvp-slide">
+            <div class="slide-content">
+                <p class="eyebrow">KONFIRMASI KEHADIRAN</p>
+                <h2 class="slide-title">Apakah Anda Hadir?</h2>
+                <p class="slide-description">
+                    Kehadiran dan doa Anda sangat berarti bagi kami.
+                </p>
+                <form id="rsvpForm" class="rsvp-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama Lengkap</label>
+                        <input class="form-control" id="name"
+                               type="text" placeholder="Nama Anda" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="attendance" class="form-label">Kehadiran</label>
+                        <select class="form-select" id="attendance" required>
+                            <option value="">Pilih konfirmasi</option>
+                            <option value="Hadir">Hadir</option>
+                            <option value="Tidak Hadir">Tidak Hadir</option>
+                            <option value="Masih Ragu">Masih Ragu</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="guestCount" class="form-label">Jumlah Tamu</label>
+                        <select class="form-select" id="guestCount">
+                            <option value="1">1 orang</option>
+                            <option value="2">2 orang</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Pesan dan Doa</label>
+                        <textarea class="form-control" id="message"
+                                  rows="2" placeholder="Tuliskan pesan..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-wedding w-100">
+                        Kirim Konfirmasi
+                    </button>
+                </form>
+                <div id="rsvpResult" class="rsvp-result" aria-live="polite"></div>
+            </div>
+        </section>
+<section class="wedding-slide cover-slide closing-slide">
+    <div class="cover-overlay"></div>
+    <div class="slide-content closing-content">
+        <p class="eyebrow">FOREVER STARTS HERE</p>
+        <h2 class="slide-title text-white">
+            Terima Kasih
+        </h2>
+        <p class="closing-text">
+            Merupakan kebahagiaan bagi kami apabila Anda
+            berkenan hadir dan memberikan doa restu
+            pada hari istimewa kami.
+        </p>
+        <div class="closing-thanks">
+            <p>Dengan penuh cinta dan rasa syukur,</p>
+            <h2>Al <span>&</span> Benk</h2>
+            <p>12 Juni 2027</p>
+            <p class="closing-blessing">
+                Semoga cinta kami tumbuh selamanya.
+            </p>
+        </div>
+    </div>
+</section>
+    </main>
+    <button id="prevSlide" class="slide-arrow prev-arrow"
+            aria-label="Slide sebelumnya">‹</button>
+    <button id="nextSlide" class="slide-arrow next-arrow"
+            aria-label="Slide selanjutnya">›</button>
+    <div class="slide-controls">
+        <span id="slideCounter">01 / 06/span>
+        <div id="slideDots" class="slide-dots">
+            <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="dot" data-slide="3" aria-label="Slide 4"></button>
+            <button class="dot" data-slide="4" aria-label="Slide 5"></button>
+            <button class="dot" data-slide="5" aria-label="Slide 6"></button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
